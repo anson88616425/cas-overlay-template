@@ -26,8 +26,6 @@ RUN cd / \
     && mkdir -p /etc/cas/saml \
     && mkdir -p cas-overlay;
 
-RUN echo $(ll /etc/cas/services)
-
 COPY --from=overlay cas-overlay/build/libs/cas.war cas-overlay/
 COPY etc/cas/ /etc/cas/
 COPY etc/cas/config/ /etc/cas/config/
