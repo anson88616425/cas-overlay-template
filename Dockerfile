@@ -31,8 +31,6 @@ RUN echo $(ll /etc/cas/services)
 COPY --from=overlay cas-overlay/build/libs/cas.war cas-overlay/
 COPY etc/cas/ /etc/cas/
 COPY etc/cas/config/ /etc/cas/config/
-COPY etc/cas/services/ /etc/cas/services/
-COPY etc/cas/saml/ /etc/cas/saml/
 
 EXPOSE 8080 8443
 
