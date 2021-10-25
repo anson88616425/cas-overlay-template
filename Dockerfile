@@ -46,7 +46,8 @@ RUN cd / \
 
 # Download the CAS overlay project \
 RUN cd / \
-    && git clone --depth 1 --single-branch -b docker5.3.1 http://14.215.246.10:17070/cas/cas-overlay-template \
+    && git clone --depth 1 --single-branch -b docker5.3.1 http://14.215.246
+    .10:17070/cas/cas-overlay-template.git cas-overlay \
     && mkdir -p /etc/cas \
     && mkdir -p cas-overlay/bin;
 
